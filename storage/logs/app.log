@@ -1,0 +1,10 @@
+[2026-05-12T00:06:52+05:30] ERROR OpenRouter error: Network error: SSL connection timeout
+[2026-05-12T00:13:19+05:30] ERROR OpenRouter error: Missing Authentication header
+[2026-05-12T00:13:34+05:30] ERROR OpenRouter error: Missing Authentication header
+[2026-05-12T00:13:45+05:30] ERROR OpenRouter error: Missing Authentication header
+[2026-05-12T00:15:13+05:30] ERROR OpenRouter error: Missing Authentication header
+[2026-05-12T00:17:36+05:30] ERROR OpenRouter error: Provider returned error
+[2026-05-12T00:21:28+05:30] ERROR OpenRouter error: Provider returned error
+[2026-05-12T00:22:06+05:30] ERROR OpenRouter error: Empty response from model.
+[2026-05-12T00:22:46+05:30] ERROR OpenRouter error: Empty response from model.
+[2026-05-12T00:31:11+05:30] ERROR OpenRouter error: Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day

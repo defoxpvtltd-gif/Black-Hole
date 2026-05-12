@@ -1,0 +1,9 @@
+﻿{
+  "name": "black-hole-netlify-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve static",
+    "dev": "netlify dev"
+  }
+}

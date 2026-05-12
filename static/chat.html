@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Hole AI Pro - Chat</title>
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body class="chat-app-body" data-page="chat">
+  <div class="bg-orbit"></div>
+  <div class="bg-noise"></div>
+
+  <div class="chat-app-shell">
+    <button id="sidebarBackdrop" class="chat-sidebar-backdrop" type="button" aria-label="Close sidebar"></button>
+
+    <aside id="chatSidebar" class="chat-sidebar">
+      <div class="chat-sidebar-head">
+        <a class="chat-brand" href="index.html">
+          <span class="chat-brand-mark" aria-hidden="true"></span>
+          <span>
+            <strong>Black Hole AI Pro</strong>
+            <small>Black and gold workspace</small>
+          </span>
+        </a>
+        <a class="brand-social-link chat-brand-social-link" href="https://www.instagram.com/ayat_rahman7690/" target="_blank" rel="noopener noreferrer">@ayat_rahman7690</a>
+        <button id="sidebarClose" class="chat-icon-button mobile-only" type="button">Close</button>
+      </div>
+
+      <button id="newChat" class="chat-primary-action" type="button">New Chat</button>
+
+      <section class="sidebar-section">
+        <p class="sidebar-label">Navigate</p>
+        <div class="sidebar-nav-list">
+          <a class="sidebar-link" href="index.html">Home</a>
+          <a class="sidebar-link" href="pages.html">Library</a>
+          <a class="sidebar-link" href="solutions.html">Solutions</a>
+          <a class="sidebar-link" href="pricing.html">Pricing</a>
+          <a class="sidebar-link" href="contact.html">Contact</a>
+        </div>
+      </section>
+
+      <section class="sidebar-section">
+        <p class="sidebar-label">Quick prompts</p>
+        <div class="sidebar-prompt-list" data-prompt-list="sidebar"></div>
+      </section>
+
+      <section class="sidebar-section grow">
+        <div class="sidebar-section-bar">
+          <p class="sidebar-label">Recent in this session</p>
+          <button id="clearChat" class="sidebar-clear" type="button">Clear</button>
+        </div>
+        <div id="recentQuestions" class="sidebar-recent"></div>
+      </section>
+
+      <div class="chat-sidebar-foot">
+        <span class="meta-pill">Black Hole V1.3</span>
+        <span class="meta-pill">Serverless session</span>
+      </div>
+    </aside>
+
+    <section class="chat-main">
+      <header class="chat-main-topbar">
+        <div class="chat-topbar-left">
+          <button id="sidebarToggle" class="chat-icon-button mobile-only" type="button">Menu</button>
+          <div>
+            <h1>Black Hole V1.3</h1>
+          </div>
+        </div>
+        <div class="chat-topbar-right">
+          <span id="activeModelLabel" class="topbar-badge">Black Hole V1.3</span>
+          <span class="topbar-badge">Static web workspace</span>
+        </div>
+      </header>
+
+      <section id="chatStage" class="chat-stage">
+        <section id="emptyState" class="chat-empty-state">
+          <span class="eyebrow">Black Hole V1.3</span>
+          <h2>How can I help you build today?</h2>
+          <p>This workspace keeps your black and gold style while giving you a cleaner chat experience and a more focused assistant surface.</p>
+          <div class="chat-empty-grid" data-prompt-list="grid"></div>
+        </section>
+
+        <section id="messages" class="chat-thread" aria-live="polite"></section>
+      </section>
+
+      <footer class="chat-composer-shell">
+        <form id="chatForm" class="chat-composer-form">
+          <label class="sr-only" for="messageInput">Message</label>
+          <textarea id="messageInput" rows="1" autocomplete="off" placeholder="Message Black Hole..." spellcheck="true"></textarea>
+          <div class="chat-composer-bar">
+            <div class="chat-composer-tools">
+              <span class="composer-hint">Enter to send</span>
+              <span class="composer-hint">Shift + Enter for new line</span>
+            </div>
+            <button id="sendButton" class="chat-send-button" type="submit">Send</button>
+          </div>
+        </form>
+        <p class="chat-disclaimer">Black Hole can make mistakes. Please verify important details.</p>
+        <p class="chat-credit">Designed and developed by Ayat Rahman. <a href="https://www.instagram.com/ayat_rahman7690/" target="_blank" rel="noopener noreferrer">@ayat_rahman7690</a></p>
+      </footer>
+    </section>
+  </div>
+
+  <script type="module" src="assets/js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Hole AI Pro - Contact</title>
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body data-page="contact">
+  <div class="bg-orbit"></div>
+  <div class="bg-noise"></div>
+  <main class="site-shell">
+    <div id="siteHeaderSlot"></div>
+    <section class="page-hero">
+      <h1>Contact the Black Hole AI team</h1>
+      <p>Use this page for project setup, pricing discussions, custom build requests, or rollout planning.</p>
+    </section>
+    <section class="content-grid two-col contact-layout">
+      <article class="card feature-card">
+        <span class="eyebrow">Contact desk</span>
+        <h2>Send project details and keep the website moving forward</h2>
+        <p>This Netlify-ready contact form can capture project inquiries without a PHP backend, while keeping the same premium business intake feel.</p>
+        <ul class="feature-list">
+          <li>Custom website expansion requests</li>
+          <li>Analytics, workflow modules, or deployment setup</li>
+          <li>Branding, pricing, and product launch conversations</li>
+        </ul>
+      </article>
+      <article class="card auth-card">
+        <h2>Project inquiry</h2>
+        <form class="stack-form" name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="project-inquiry" />
+          <p hidden>
+            <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+          </p>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Company</span>
+            <input type="text" name="company" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button type="submit" class="button primary">Send message</button>
+        </form>
+      </article>
+    </section>
+    <div id="siteFooterSlot"></div>
+  </main>
+  <script type="module" src="assets/js/site.js"></script>
+</body>
+</html>
